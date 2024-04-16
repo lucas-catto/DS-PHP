@@ -1,0 +1,38 @@
+
+body {
+    font-family:      Arial, sans-serif;
+    background-color: #f9f9f9;
+    color:            #333;
+    line-height:      1.6;
+}
+
+.container {
+    max-width:        1200px;
+    margin:           0 auto;
+    padding:          20px;
+    background-color: #ffffff;
+    box-shadow:       0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width:            100%;
+    padding:          10px;
+    border:           1px solid #ccc;
+    border-radius:    3px;
+}
+
+/* Estilização de botões */
+button {
+    background-color: #0074d9;
+    color:            #ffffff;
+    border:           none;
+    border-radius:    5px;
+    padding:          10px 20px;
+    cursor:           pointer;
+    transition:       background-color 0.3s ease;
+}
+
+button:hover
+{ background-color: #005ea6; }
