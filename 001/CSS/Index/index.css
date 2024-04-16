@@ -1,0 +1,69 @@
+
+header
+{ padding: 32px 0; }
+
+header,
+footer {
+    background-color: var(--defaultBlue);
+}
+
+main {
+    flex-direction:   column;
+    justify-content:  center;
+    align-items:      center;
+    gap:              16px;
+}
+
+main form {
+    padding:          8px;
+    border:           4px solid var(--defaultBlue);
+    border-radius:    8px;
+    display:          flex;
+    flex-direction:   column;
+    align-items:      center;
+    gap:              8px;
+}
+
+main form div {
+    display:          flex;
+    flex-direction:   column;
+}
+
+main form div input[type="text"],
+main form div input[type="email"],
+main form div textarea {
+    padding:          4px 8px;
+    border:           2px solid var(--defaultBlue);
+    border-radius:    4px;
+    font-size:        12pt;
+}
+
+main form div input[type="text"]:focus,
+main form div input[type="email"]:focus,
+main form div textarea:focus,
+main form div input[type="text"]:not(:placeholder-shown),
+main form div input[type="email"]:not(:placeholder-shown),
+main form div textarea:not(:placeholder-shown) {
+    background-color: var(--defaultBlue);
+    color:            var(--defaultWhite);
+}
+
+main form div input[type="text"] {}
+
+main form div input[type="email"] {}
+
+main form div textarea {
+    resize: none;
+}
+
+main form button[type="submit"] {
+    padding:          4px 8px;
+    width:            auto;
+    height:           auto;
+    border:           2px solid var(--defaultBlue);
+    border-radius:    4px;
+    background-color: var(--defaultWhite);
+}
+
+footer
+{ padding: 16px 0; }
