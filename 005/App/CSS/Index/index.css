@@ -1,0 +1,69 @@
+
+main {
+    padding:         32px 0;
+    flex-direction:  column;
+    align-items:     center;
+    gap:             16px;
+}
+
+main ul {
+    padding:          16px 8px;
+    border:           4px solid var(--defaultBlue);
+    border-radius:    8px;
+    display:          flex;
+    gap:              8px;
+}
+
+main ul li {}
+
+main ul li a {
+    padding:          4px 8px;
+    border:           2px solid var(--defaultBlue);
+    border-radius:    4px;
+    background-color: var(--defaultWhite);
+    color:            var(--defaultBlue);
+    font-size:        16pt;
+}
+
+main ul li a:hover {
+    background-color: var(--defaultBlue);
+    color:            var(--defaultWhite);
+}
+
+main section {
+    width:            100%;
+    max-width:        100%;
+    height:           auto;
+    display:          flex;
+    justify-content:  center;
+    gap:              8px;
+}
+
+main section ul {
+    width:            100%;
+    max-width:        35%;
+    padding:          4px 0;
+    border:           4px solid var(--defaultBlue);
+    border-radius:    8px;
+    display:          flex;
+    flex-direction:   column;
+    max-height:       60vh;
+    overflow-y:       auto;
+    gap:              0;
+}
+
+main section ul::-webkit-scrollbar {
+    width:            0;
+    height:           0;
+}
+
+main section ul > h2 {
+    text-align:       center;
+    border-bottom:    4px solid var(--defaultBlue);
+}
+
+main section ul li {
+    padding:          5px 8px;
+    border-top:       1px solid var(--defaultBlue);
+    border-bottom:    1px solid var(--defaultBlue);
+}
