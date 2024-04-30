@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    margin:           0;
+    padding:          0;
+    border:           0;
+    box-sizing:       border-box;
+    font-family:      'Roboto', sans-serif;
+    
+    outline:          none; /* * */
+    list-style:       none; /* * */
+    text-decoration:  none; /* * */
+}
+
+:root {
+    --defaultBlue:    rgb(12, 6, 48);
+    --defaultWhite:   rgb(255, 255, 255);
+    --defaultBlack:   rgb(0, 0, 0);
+    --defaultRed:     rgb(255, 0, 0);
+}
+
+html, body {
+    width:            100%;
+    height:           100%;
+}
+
+body {
+    display:          flex;
+    flex-direction:   column;
+}
+
+main { flex: 1; }
+
+header,
+main,
+footer {
+    width:            100%;
+    max-width:        100%;
+    height:           auto;
+    display:          flex;
+}
+
+header
+{ padding: 22px 33px; }
+
+header a
+{ color: var(--defaultWhite); }
+
+header,
+footer {
+    justify-content:  center;
+    text-align:       center;
+    color:            var(--defaultWhite);
+    background-color: var(--defaultBlue); 
+}
+
+footer
+{ padding: 4px 0; }
+
+footer a
+{ color: var(--defaultWhite); }
+
+
+main {
+    padding:          16px 0;
+    flex-direction:   column;
+    align-items:      center;
+    gap:              8px;
+}
+
+main form {
+    padding:          4px;
+    width:            100%;
+    max-width:        80%;
+    height:           auto;
+    border:           4px solid var(--defaultBlue);
+    border-radius:    8px;
+    display:          flex;
+    gap:              4px;
+}
+
+main form input[type="text"],
+main form button[type="submit"] {
+    width:            100%;
+    height:           auto;
+    border:           2px solid var(--defaultBlue);
+    border-radius:    4px;
+}
+
+main form input[type="text"] {
+    padding:          4px 8px;
+    max-width:        75%;
+    font-size:        14pt;
+}
+
+main form input[type="text"]:focus,
+main form input[type="text"]:not(:placeholder-shown) {
+    background-color: var(--defaultBlue);
+    color:            var(--defaultWhite);
+}
+
+main form button[type="submit"] {
+    max-width:        25%;
+    font-size:        12pt;
+}
+
+main form button[type="submit"]:hover {
+    background-color: var(--defaultBlue);
+    color:            var(--defaultWhite);
+}
+
+main table {
+    padding:          8px 4px;
+    border:           4px solid var(--defaultBlue);
+    border-radius:    8px;
+}
+
+main table th
+{ border-bottom: 2px solid var(--defaultBlue); }
