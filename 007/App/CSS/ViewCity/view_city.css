@@ -1,0 +1,31 @@
+
+@import url('./../Global/global.css');
+
+header a
+{ color: var(--defaultWhite); }
+
+main {
+    justify-content:  center;
+    align-items:      center;
+}
+
+main ul {
+    padding:          8px;
+    border:           4px solid var(--defaultBlue);
+    border-radius:    8px;
+    display:          flex;
+    flex-direction:   column;
+    align-items:      center;
+    justify-content:  flex-start;
+    gap:              4px;
+}
+
+main ul li {
+    padding:          2px;
+    width:            100%;
+    max-width:        100%;
+    height:           auto;
+    border:           2px solid var(--defaultBlue);
+    border-radius:    4px;
+    font-size:        16pt;
+}
